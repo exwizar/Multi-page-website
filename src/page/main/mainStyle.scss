@@ -1,0 +1,23 @@
+
+.main {
+    .main-img {
+        margin: 0 auto;
+        background-image: url('./ritmStyle.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        object-fit: cover;
+        width: 1296px;
+        height: 600px;
+        margin-top: 50px;
+
+        .main-img__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+        }
+    }
+}

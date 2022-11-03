@@ -1,2 +1,26 @@
 @import './index.scss';
 
+.app {
+    background-color: $bg;
+    display: flex;
+    .wrapper {
+        display: block;
+        margin: 30px auto;
+        width: 1336px;
+        padding: 0 20px;
+        
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            .menu-links {
+                .link {
+                    font-size: 14px;
+                    color: $color-2;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
