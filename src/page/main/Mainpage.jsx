@@ -2,6 +2,7 @@ import './mainStyle.scss'
 import Rectangle from '../../components/UI/rectangle/Rectangle.jsx'
 import Slider from "react-slick";
 import { useState } from 'react';
+import swimGrl from '../../scss/img/main-img/swimming-girl_2.png'
 
 const Mainpage = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -95,12 +96,25 @@ const Mainpage = () => {
         <Rectangle>Об RitmStyle</Rectangle>
         
         <div className='about-massage'>
-          <div className='about-massage__title'>
-            <h2>RitmStyle массаж</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+          <div className='about-massage__info'>
+            <h2 className='about-massage__title'>RitmStyle массаж</h2>
+            <p className='about-massage__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
             Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.</p>
           </div>
-          <div className='about-massage__info'></div>
+            <div className='about-massage__img'>
+              <img src={swimGrl} alt="" />
+            </div>
+        </div>
+
+        <div className='about-massage'>
+            <div className='about-massage__img'>
+              <img src={swimGrl} alt="" />
+            </div>
+          <div className='about-massage__info'>
+            <h2 className='about-massage__title'>RitmStyle массаж</h2>
+            <p className='about-massage__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+            Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.</p>
+          </div>
         </div>
 
       </div>

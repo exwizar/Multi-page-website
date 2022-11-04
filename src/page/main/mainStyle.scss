@@ -143,7 +143,7 @@
             }
             .card-text {
                 padding: 0 60px 0;
-                text-align: center;
+                text-align: left;
                 font-family: 'Proxima Nova';
                 font-style: normal;
                 font-weight: 300;
@@ -155,6 +155,31 @@
 
     .about {
       padding-top: 700px;
+
+        .about-massage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 84px;
+            padding-bottom: 100px;
+            .about-massage__info {
+                .about-massage__title {
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 700; //add 700
+                    font-size: 24px;
+                    line-height: 140%;
+                }
+                .about-massage__text {
+                    width: 466px;
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 300; // add 300
+                    font-size: 16px;
+                    line-height: 140%;
+                }
+            }
+        }
     }
 
 }
