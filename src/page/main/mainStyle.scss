@@ -1,8 +1,9 @@
-
+@import '/src/scss/index.scss';
 .main {
+
+    color: $color-2;
     .main-img {
-        margin: 0 auto;
-        background-image: url('./ritmStyle.png');
+        background-image: url('./../../scss/img/main-img/ritmStyle.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -10,14 +11,52 @@
         width: 1296px;
         height: 600px;
         margin-top: 50px;
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
         .main-img__title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
 
+
+            &::before {
+                content: '';
+                position: absolute; 
+                display: block;
+                border-radius: 0px 50px;
+                width: 28px;
+                height: 14px;
+                margin-left: -66px;
+                background-color: white;
+            };
+            &::after {
+                content: '';
+                position: absolute; 
+                border-radius: 0px 50px;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                width: 28px;
+                height: 14px;
+                margin-left: 46px;
+                background-color: white;
+            }
+        }
+
+        .main-img__text {
+            font-family: 'El Messiri';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 140%;
+            width: 587px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+    }
+
+    .main-session {
+        .main-session__imgs {
+            display: gird;
         }
     }
 }

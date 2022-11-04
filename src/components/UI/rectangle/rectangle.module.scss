@@ -1,0 +1,31 @@
+@import '/src/scss/index.scss';
+
+.title {
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 140%;
+    text-align: center;
+    margin: 150px 0 100px;
+
+    &::before {
+        content: '';
+        position: absolute; 
+        border-radius: 0px 50px;
+        margin: 20px 0px 40px -80px;
+        width: 28px;
+        height: 14px;
+        background-color: $rectangle;
+    };
+    &::after {
+        content: '';
+        position: absolute; 
+        border-radius: 0px 50px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 28px;
+        height: 14px;
+        margin: 20px 0px 40px 50px;
+        background-color: $rectangle;
+    }
+}
