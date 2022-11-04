@@ -2,7 +2,8 @@ import './mainStyle.scss'
 import Rectangle from '../../components/UI/rectangle/Rectangle.jsx'
 import Slider from "react-slick";
 import { useState } from 'react';
-import swimGrl from '../../scss/img/main-img/swimming-girl_2.png'
+import swimGrl from '../../scss/img/main-img/swimming-girl_2.png';
+import priceImg from '../../scss/img/main-img/price.png'
 
 const Mainpage = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -114,6 +115,40 @@ const Mainpage = () => {
             <h2 className='about-massage__title'>RitmStyle массаж</h2>
             <p className='about-massage__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
             Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="price">
+        <Rectangle>Стоимость сеансов</Rectangle>
+        <div className="price-block">
+
+          <div className="price-list">
+            <div className="price-list__info">
+              <p className="price-list__info-title">RitmStyle с погружением</p>
+              <p className="price-list__info-text">1000р.</p>
+            </div>
+            <div className="price-list__info">
+              <p className="price-list__info-title">Абонемент на RitmStyle</p>
+              <p className="price-list__info-text">5500р.</p>
+            </div>
+            <div className="price-list__info">
+              <p className="price-list__info-title">RitmStyle для пар</p>
+              <p className="price-list__info-text">6000р.</p>
+            </div>
+            <div className="price-list__info">
+              <p className="price-list__info-title">RitmStyle для беременных</p>
+              <p className="price-list__info-text">13500р.</p>
+            </div>
+            <div className="price-list__info">
+              <p className="price-list__info-title">RitmStyle +  фотосессия</p>
+              <p className="price-list__info-text">11500р.</p>
+            </div>
+          </div>
+
+          <div className='price-list__img'>
+            <img src={priceImg} alt="price-img" />
           </div>
         </div>
 
