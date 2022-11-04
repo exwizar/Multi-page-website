@@ -16,7 +16,11 @@
             flex-direction: row;
             .menu-links {
                 .link {
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 400;
                     font-size: 14px;
+                    line-height: 135%;
                     color: $color-2;
                     padding: 0 20px;
                 }
