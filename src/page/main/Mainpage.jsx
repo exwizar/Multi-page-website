@@ -15,12 +15,32 @@ const Mainpage = () => {
         </div>
 
         <div className="main-session__imgs">
-          <div className='main-session__img-1'></div>
-          <div className='main-session__img-2'></div>
-          <div className='main-session__img-3'></div>
-          <div className='main-session__img-4'></div>
-          <div className='main-session__img-5'></div>
+
+          <div className='main-session__img-1 session__img'>
+            <p className='main-session__img-text'>Стандартный RitmStyle</p>
+          </div>
+
+          <div className='main-session__img-2 session__img'>
+            <p className='main-session__img-text'>RitmStyle для пар</p>
+          </div>
+
+          <div className='main-session__img-3 session__img'>
+            <p className='main-session__img-text'>RitmStyle для беременных</p>
+          </div>
+
+          <div className='main-session__img-4 session__img'>
+            <p className='main-session__img-text'>RitmStyle с полным погружением под воду</p>
+          </div>
+
+          <div className='main-session__img-5 session__img'>
+            <p className='main-session__img-text'>RitmStyle + красочная подводная фотосессия</p>
+          </div>
+
         </div>
+      </div>
+
+      <div className='reviews'>
+      <Rectangle>Отзывы</Rectangle>
       </div>
     </div>
   )
