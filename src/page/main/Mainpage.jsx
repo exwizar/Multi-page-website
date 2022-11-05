@@ -181,6 +181,10 @@ const Mainpage = () => {
             </div>
           </div>
       </div>
+      <footer className='footer'>
+        <p>© 2018-2022 RitmStyle</p>
+        <p>Сделано d-e-n.info</p>
+      </footer>
     </div>
   )
 }

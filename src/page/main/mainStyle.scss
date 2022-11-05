@@ -228,7 +228,9 @@
         }
     }
 
-    .address {
+    .address { 
+        display: flex;
+        justify-content: center;
         margin-top: 200px;
         .address-block {
             display: grid;
@@ -280,6 +282,13 @@
                 }
             }
         }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 100px;
     }
 
 }
