@@ -228,4 +228,58 @@
         }
     }
 
+    .address {
+        margin-top: 200px;
+        .address-block {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(392px, 100px));
+            grid-template-rows: repeat(2, 290px);
+            gap: 24px;
+            grid-template-areas: 
+            'a a b'
+            'a a c';
+            .address-block__map{
+                grid-area: a;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+            .first-address{grid-area: b;}
+            .second-address{grid-area: c;}
+            .address-position {
+                padding: 35px 45px;
+                background-color:$color-1;
+                border-radius: 10px;
+                .address-title {
+                    font-family: 'El Messiri';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 140%;
+                }
+                .address-info {
+                    img {
+                        margin-right: 20px;
+                    }
+                    .address-info__block{
+                        display: flex;
+                        align-items: center;
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: 400; //add
+                        font-size: 14px;
+                        line-height: 135%;
+                        padding: 10px 0;
+                        widtH: 262px;
+                    }
+                }
+                button {
+                    margin-top: 29px;
+                    background-color: $color-2;
+                    color: $color-1;
+                }
+            }
+        }
+    }
+
 }

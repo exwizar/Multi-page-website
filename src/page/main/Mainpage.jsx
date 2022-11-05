@@ -4,6 +4,10 @@ import Slider from "react-slick";
 import { useState } from 'react';
 import swimGrl from '../../scss/img/main-img/swimming-girl_2.png';
 import priceImg from '../../scss/img/main-img/price.png'
+import Subsession from "../../components/UI/btnSubSession/Subsession.jsx";
+import location from '../../scss/img/main-img/location.png'
+import metro from '../../scss/img/main-img/metro.png'
+import calendar from '../../scss/img/main-img/calendar.png'
 
 const Mainpage = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -152,6 +156,30 @@ const Mainpage = () => {
           </div>
         </div>
 
+      </div>
+      
+      <div className="address">
+          <div className='address-block'>
+          <iframe className='address-block__map' src="https://yandex.ru/map-widget/v1/?um=constructor%3Abeae2e0e76fdacda1acb1c809cf566bdeba262886b73eeb94f2d5e60bf042af0&amp;source=constructor" frameborder="0"></iframe>
+            <div className='first-address address-position'>
+            <div className="address-title"><h2>Бассейн WorkClass</h2></div>
+                <ul className="address-info">
+                  <li className='address-info__block'><img src={location} alt="" />Невская 140</li>
+                  <li className='address-info__block'><img src={metro} alt="" />м. Спасская</li>
+                  <li className='address-info__block'><img src={calendar} alt="" />Запись по договоренности</li>
+                </ul>
+              <Subsession className='address-info__btn'/>
+            </div>
+            <div className='second-address address-position'>
+              <div className="address-title"><h2>Бассейн "На Гороховой</h2></div>
+                <ul className='address-info'>
+                  <li className='address-info__block'><img src={location} alt="" />3-й проезд Иванова</li>
+                  <li className='address-info__block'><img src={metro} alt="" />м. Крестовский остров</li>
+                  <li className='address-info__block'><img src={calendar} alt="" />Запись по договоренности</li>
+                </ul>
+            <Subsession className='address-info__btn'/>
+            </div>
+          </div>
       </div>
     </div>
   )
