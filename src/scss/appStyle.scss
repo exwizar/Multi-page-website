@@ -26,5 +26,12 @@
                 }
             }
         }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 100px;
+            color: $color-2;
+        }
     }
 }

@@ -35,6 +35,10 @@ function App() {
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/contact" element={<Contactpage setModalActive={setModalActive} />} />
         </Routes>
+        <footer className='footer'>
+        <p>© 2018-2022 RitmStyle</p>
+        <p>Сделано d-e-n.info</p>
+      </footer>
       </div>
 
     </div>
