@@ -13,7 +13,7 @@ const Modal = ({active, setActive}) => {
         <div className={active ? 'modal__content active' : 'modal__content'} onClick={e => e.stopPropagation()}>
 
         <form onSubmit={handleSubmit(onSubmit)}>
-            <span className="text-center">login</span>
+            <span className="text-center">Запись на сеанс</span>
             <div className="input-container">
               <input type="text" required="" {...register("First name", {required: true, maxLength: 80})}/>
               <label>Имя</label>		
