@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './subSession.module.scss'
 
-const subSession = () => {
+const subSession = ({setModalActive}) => {
   return (
-    <button className={classes.subsession}>Записаться на сеанс</button>
+    <button className={classes.subsession} onClick={() => {setModalActive(true)}}>Записаться на сеанс</button>
   )
 }
 

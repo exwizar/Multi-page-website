@@ -1,4 +1,3 @@
-import React from "react";
 import './scss/appStyle.scss';
 import { Link, Route, Routes } from "react-router-dom";
 import Aboutpage from './page/About/Aboutpage.jsx'
@@ -7,10 +6,14 @@ import Newspage from './page/news/Newspage.jsx'
 import Mainpage from './page/main/Mainpage.jsx'
 import logo from './scss/img/logo.svg'
 import Subsession from "./components/UI/btnSubSession/Subsession.jsx";
+import { useState } from 'react';
+import Modal from './components/MudalBlock/Modal';
 
 function App() {
+  const [modalAcitve, setModalActive] = useState(false);
   return (
     <div className="app">
+      <Modal active={modalAcitve} setActive={setModalActive}/>
       <div className="wrapper">
         <header className="menu">
         <div className="menu-logo">
@@ -23,11 +26,11 @@ function App() {
           <Link className = 'link' to="/contact">Контакты</Link>
         </div>
         <div>
-          <Subsession />
+          <Subsession setModalActive={setModalActive}/>
         </div>
         </header>
         <Routes>
-          <Route path="/" element={<Mainpage />} />
+          <Route path="/" element={<Mainpage setModalActive={setModalActive} />} />
           <Route path="/news" element={<Newspage />} />
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/contact" element={<Contactpage />} />
