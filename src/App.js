@@ -36,8 +36,11 @@ function App() {
           <Route path="/contact" element={<Contactpage setModalActive={setModalActive} />} />
         </Routes>
         <footer className='footer'>
-        <p>© 2018-2022 RitmStyle</p>
-        <p>Сделано d-e-n.info</p>
+        <span className='line'></span>
+        <div className='footer-content'>
+          <p>© 2018-2022 RitmStyle</p>
+          <p>Наш телефон: +7-999-515-29-34</p>
+        </div>
       </footer>
       </div>
 

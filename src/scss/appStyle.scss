@@ -16,7 +16,7 @@
             flex-direction: row;
             .menu-links {
                 .link {
-                    font-family: 'Proxima Nova';
+                    font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 14px;
@@ -27,11 +27,22 @@
             }
         }
         .footer {
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            margin-top: 100px;
-            color: $color-2;
+            .line {
+                display: block;
+                position: relative;
+                top: 70px;
+                height: 1px;
+                width: 100%;
+                background-color: $color-2;
+                opacity: 0.5
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                margin-top: 100px;
+                color: $color-2;
+            }
         }
     }
 }
