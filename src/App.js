@@ -33,7 +33,7 @@ function App() {
           <Route path="/" element={<Mainpage setModalActive={setModalActive} />} />
           <Route path="/news" element={<Newspage />} />
           <Route path="/about" element={<Aboutpage />} />
-          <Route path="/contact" element={<Contactpage />} />
+          <Route path="/contact" element={<Contactpage setModalActive={setModalActive} />} />
         </Routes>
       </div>
 
