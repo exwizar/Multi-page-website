@@ -29,6 +29,7 @@ function App() {
           <Subsession setModalActive={setModalActive}/>
         </div>
         </header>
+        <span className='line'></span>
         <Routes>
           <Route path="/" element={<Mainpage setModalActive={setModalActive} />} />
           <Route path="/news" element={<Newspage />} />
@@ -36,7 +37,7 @@ function App() {
           <Route path="/contact" element={<Contactpage setModalActive={setModalActive} />} />
         </Routes>
         <footer className='footer'>
-        <span className='line'></span>
+        <span className='line' style={{top: "70px"}}></span>
         <div className='footer-content'>
           <p>© 2018-2022 RitmStyle</p>
           <p>Наш телефон: +7-999-515-29-34</p>
