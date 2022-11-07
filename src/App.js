@@ -8,6 +8,7 @@ import logo from './scss/img/logo.svg'
 import Subsession from "./components/UI/btnSubSession/Subsession.jsx";
 import { useState } from 'react';
 import Modal from './components/MudalBlock/Modal';
+import Post from './page/news/posts/Post';
 
 function App() {
   const [modalAcitve, setModalActive] = useState(false);
@@ -21,7 +22,7 @@ function App() {
         </div>
         <div className="menu-links">
           <Link className = 'link' to="/">Главная</Link>
-          <Link className = 'link' to="/news">Новости</Link>
+          <Link className = 'link' to="/news">Блог</Link>
           <Link className = 'link' to="/about">О нас</Link>
           <Link className = 'link' to="/contact">Контакты</Link>
         </div>
@@ -32,7 +33,8 @@ function App() {
         <span className='line'></span>
         <Routes>
           <Route path="/" element={<Mainpage setModalActive={setModalActive} />} />
-          <Route path="/news" element={<Newspage />} />
+          <Route path="/news/*" element={<Newspage />} />
+          <Route path="/news/:id" element={<Post />} />
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/contact" element={<Contactpage setModalActive={setModalActive} />} />
         </Routes>

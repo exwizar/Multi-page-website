@@ -1,4 +1,60 @@
 @import '/src/scss/index.scss';
 .news {
-    background-color: $bg;
+    color: $color-2;
+    h2 {
+        margin: 60px 0 60px;
+    }
+    .news-wrapper {
+        display: flex;
+        border: 2px solid $color-1;
+        border-radius: 20px;
+        margin-bottom: 45px;
+        padding: 60px;
+        gap: 50px;
+        .wrapper-img {
+        }
+
+        .wrapper-content{
+            .data-block {
+                width: 96px;
+                padding: 6px 12px 5px;
+                background: #018ABE;
+                border-radius: 5px;
+            }
+            .wrapper-content__title {
+                font-family: 'El Messiri';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                margin: 35px 0 20px 0;
+            }
+
+            .wrapper-content__body {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 140%;
+                margin-bottom: 50px;
+            }
+
+            .wrapper-content__btn {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 135%;
+                padding: 10px 20px;
+                background: $color-1;
+                border-radius: 5px;
+                border: none;
+                color: $color-2;
+                cursor: pointer;
+              
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
 }
