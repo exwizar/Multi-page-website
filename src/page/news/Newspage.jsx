@@ -9,12 +9,35 @@ import postImg from '../../scss/img/news-img/newsImg.png'
 
 const Newspage = () => {
   const [posts, setPosts] = useState([])
+  const [currentPost, setCurrentPost] = useState(1)
+  const [fetching, setFetching] = useState(true)
 
   useEffect(() => {
-     fetch ('http://jsonplaceholder.typicode.com/posts?_limit=50&_page=2')
-      .then((res) => res.json())
-      .then((result) => setPosts(result))
-  },[])
+    if (fetching) {
+      console.log('fetching')
+      fetch (`http://jsonplaceholder.typicode.com/posts?_limit=2&_page=${currentPost}`)
+       .then((res) => res.json())
+       .then((result) => {
+        setPosts([...posts, ...result])
+        setCurrentPost(prevState => prevState + 1)
+      })
+      .finally(() => setFetching(false))
+    }
+  },[fetching])
+
+  useEffect(() => {
+    document.addEventListener('scroll', scrollHandler)
+
+    return function() {
+      document.removeEventListener('scroll', scrollHandler)
+    }
+  }, [])
+
+  const scrollHandler = (e) => {
+    if(e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100){
+      setFetching(true)
+    }
+  }
 
   return (
     <div className='news'>
@@ -22,14 +45,14 @@ const Newspage = () => {
       <div>
         {
           posts.map(post => (
-             <div className="news-wrapper">
+             <div className="news-wrapper" key={post.id}>
                 <div className="wrapper-img">
                   <img src={postImg} alt="post-img" />
                 </div>
                 <div className="wrapper-content">
                   <div className="data-block">13.02.2022</div>
                   <h3 className='wrapper-content__title'>{post.title}</h3>
-                  <p className='wrapper-content__body' maxlength='5'>
+                  <p className='wrapper-content__body'>
                   {post.body.length > 100 ?
                   `${post.body.substring(0, 100)}...`: post.body}
                   </p>
