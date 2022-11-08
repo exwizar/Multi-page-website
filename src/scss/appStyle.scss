@@ -8,13 +8,14 @@
         flex-direction: column;
         min-height: 93.7vh;
         margin: 30px auto;
-        width: 1336px;
+        max-width: 1336px;
         padding: 0 20px;
         .menu {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             flex-direction: row;
+            flex-wrap: wrap;
             .menu-links {
                 .link {
                     font-family: 'Roboto';

@@ -8,10 +8,12 @@
         display: flex;
         margin-bottom: 45px;
         gap: 50px;
+        flex-wrap: wrap;
         .wrapper-img {
         }
 
         .wrapper-content{
+            width: 40%;
             .data-block {
                 width: 96px;
                 padding: 6px 12px 5px;

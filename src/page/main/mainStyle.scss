@@ -11,7 +11,7 @@
         background-repeat: no-repeat;
         background-size: 100%;
         object-fit: cover;
-        width: 1296px;
+        max-width: 1296px;
         height: 600px;
         margin-top: 50px;
         display: flex;
@@ -155,15 +155,17 @@
     .about {
       padding-top: 700px;
 
-        .about-massage {
+        .about-block {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 84px;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
             &:first-of-type {
                 padding-bottom: 100px;
             }
-            .about-massage__info {
+            .about-massage {
                 .about-massage__title {
                     font-family: 'Roboto', sans-serif;
                     font-style: normal;
@@ -180,6 +182,7 @@
                     font-size: 16px;
                     line-height: 140%;
                 }
+
             }
         }
     }
@@ -190,6 +193,7 @@
             align-items: center;
             justify-content: center;
             gap: 134px;
+            flex-wrap: wrap;
             .price-list {
                 .price-list__info {
                     display: flex;
