@@ -3,7 +3,13 @@ import classes from './rectangle.module.scss'
 
 const Rectangle = ({children}) => {
   return (
-    <h2 className={classes.title}>{children}</h2>
+    <div>
+      <h1 className={classes.title}>
+      <span className={classes.before}></span>
+      {children}
+      <span className={classes.after}></span>
+      </h1>
+    </div>
   )
 }
 
