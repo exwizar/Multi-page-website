@@ -1,5 +1,5 @@
 import './mainStyle.scss'
-import Rectangle from '../../components/UI/rectangle/Rectangle.jsx'
+import Heading from '../../components/UI/heading/Heading.jsx'
 import Slider from "react-slick";
 import { useState } from 'react';
 import swimGrl from '../../scss/img/main-img/swimming-girl_2.png';
@@ -53,7 +53,7 @@ const Mainpage = ({setModalActive}) => {
 
       <div className="main-session">
         <div className='main-session__title'>
-          <Rectangle>Сеансы RitmStyle</Rectangle>
+          <Heading>Сеансы RitmStyle</Heading>
         </div>
 
         <div className="main-session__imgs">
@@ -82,7 +82,7 @@ const Mainpage = ({setModalActive}) => {
       </div>
 
       <div className='reviews'>
-        <Rectangle>Отзывы</Rectangle>
+        <Heading>Отзывы</Heading>
       
         <div className='slider'>
           <Slider {...settings}>
@@ -98,7 +98,7 @@ const Mainpage = ({setModalActive}) => {
         </div>
       </div>
       <div className='about'>
-        <Rectangle>Об RitmStyle</Rectangle>
+        <Heading>Об RitmStyle</Heading>
         
         <div className='about-massage'>
           <div className='about-massage__info'>
@@ -125,7 +125,7 @@ const Mainpage = ({setModalActive}) => {
       </div>
 
       <div className="price">
-        <Rectangle>Стоимость сеансов</Rectangle>
+        <Heading>Стоимость сеансов</Heading>
         <div className="price-block">
 
           <div className="price-list">

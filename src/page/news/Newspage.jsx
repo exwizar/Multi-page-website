@@ -1,9 +1,8 @@
 import React from 'react'
 import "./newsStyle.scss"
-import Rectangle from '../../components/UI/rectangle/Rectangle'
-import Post from './posts/Post'
+import Rectangle from '../../components/UI/heading/Heading.jsx'
 import { useState } from 'react'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { useEffect } from 'react'
 import postImg from '../../scss/img/news-img/newsImg.png'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './rectangle.module.scss'
 
-const Rectangle = ({children}) => {
+const Heading = ({children}) => {
   return (
     <div>
       <h1 className={classes.title}>
@@ -13,4 +13,4 @@ const Rectangle = ({children}) => {
   )
 }
 
-export default Rectangle
+export default Heading

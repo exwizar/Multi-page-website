@@ -4,12 +4,12 @@ import metro from '../../scss/img/main-img/metro.png'
 import calendar from '../../scss/img/main-img/calendar.png'
 import Subsession from "../../components/UI/btnSubSession/Subsession.jsx";
 import './contactStyle.scss' 
-import Rectangle from '../../components/UI/rectangle/Rectangle';
+import Heading from '../../components/UI/heading/Heading.jsx';
 
 const Contactpage = ({setModalActive}) => {
   return (
     <div className='contact'>
-      <Rectangle>Контакты</Rectangle>
+      <Heading>Контакты</Heading>
     <div className="address">
           <div className='address-block'>
           <iframe className='address-block__map' src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa1de3be547615126f0c0bb68d8da7a47357419c01a0c5f1b73351225589d506d&amp;source=constructor"></iframe>
