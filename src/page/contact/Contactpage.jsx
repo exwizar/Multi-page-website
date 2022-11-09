@@ -3,8 +3,9 @@ import location from '../../scss/img/main-img/location.png'
 import metro from '../../scss/img/main-img/metro.png'
 import calendar from '../../scss/img/main-img/calendar.png'
 import Subsession from "../../components/UI/btnSubSession/Subsession.jsx";
-import './contactStyle.scss' 
 import Heading from '../../components/UI/heading/Heading.jsx';
+import './contactStyle.scss' 
+import './contacMedia.scss'
 
 const Contactpage = ({setModalActive}) => {
   return (

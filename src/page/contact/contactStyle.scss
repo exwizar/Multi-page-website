@@ -5,7 +5,10 @@
     h1 {
         margin: 40px 0 -130px
     }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .address { 
         display: flex;
         justify-content: center;
@@ -13,6 +16,8 @@
     
         .address-block {
             display: grid;
+            justify-content: center;
+            align-items: center;
             grid-template-columns: repeat(3, minmax(392px, 100px));
             grid-template-rows: repeat(2, 290px);
             gap: 24px;

@@ -123,7 +123,6 @@
                 transform: scale(1);
             }
             .card {
-                
                 border-radius: 10px;
                 background-color: $rectangle;
                 color: white;
@@ -134,7 +133,7 @@
             }
             .card-title {
                 padding: 50px 60px 20px;
-                font-family: 'Proxima Nova';
+                font-family: 'Roboto';
                 font-style: normal;     
                 font-weight: 700;
                 font-size: 20px;
@@ -143,7 +142,7 @@
             .card-text {
                 padding: 0 60px 0;
                 text-align: left;
-                font-family: 'Proxima Nova';
+                font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 14px;
@@ -238,7 +237,7 @@
         margin-top: 200px;
         .address-block {
             display: grid;
-            grid-template-columns: repeat(3, minmax(392px, 100px));
+            grid-template-columns: repeat(3, minmax(100px, 392px));
             grid-template-rows: repeat(2, 290px);
             gap: 24px;
             grid-template-areas: 

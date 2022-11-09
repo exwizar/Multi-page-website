@@ -6,7 +6,7 @@
     .wrapper {
         display: flex;
         flex-direction: column;
-        min-height: 93.7vh;
+        min-height: 100vh;
         margin: 30px auto;
         max-width: 1336px;
         padding: 0 20px;
@@ -53,7 +53,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .app {
         .wrapper {
             .menu {

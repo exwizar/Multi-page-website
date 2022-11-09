@@ -1,4 +1,5 @@
 import './mainStyle.scss'
+import './mainMedia.scss'
 import Heading from '../../components/UI/heading/Heading.jsx'
 import Slider from "react-slick";
 import { useState } from 'react';
@@ -11,6 +12,8 @@ import calendar from '../../scss/img/main-img/calendar.png'
 
 const Mainpage = ({setModalActive}) => {
   const [slideIndex, setSlideIndex] = useState(0);
+  
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -21,6 +24,14 @@ const Mainpage = ({setModalActive}) => {
     autoplaySpeed: 10000,
     centerMode: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint : 1350,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ],
     beforeChange: (current, next)=>setSlideIndex(next),
     customPaging: () => (
       <div className='papa'
