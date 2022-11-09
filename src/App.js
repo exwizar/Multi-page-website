@@ -9,14 +9,17 @@ import Subsession from "./components/UI/btnSubSession/Subsession.jsx";
 import { useState } from 'react';
 import Modal from './components/MudalBlock/Modal';
 import Post from './page/news/posts/Post';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 function App() {
   const [modalAcitve, setModalActive] = useState(false);
+  const [nav, setNav] = useState(false);
+  console.log(nav);
   return (
     <div className="app">
       <Modal active={modalAcitve} setActive={setModalActive}/>
       <div className="wrapper">
-        <header className="menu">
+        <header className={nav ? 'menu active' : 'menu'}>
         <div className="menu-logo">
           <img src={logo} alt="logo" />
         </div>
@@ -30,6 +33,9 @@ function App() {
           <Subsession setModalActive={setModalActive}/>
         </div>
         </header>
+          <div onClick={() => setNav(!nav)} className="burger-menu">
+          {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>}
+          </div>
         <span className='line'></span>
         <Routes>
           <Route path="/" element={<Mainpage setModalActive={setModalActive} />} />
