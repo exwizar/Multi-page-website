@@ -14,7 +14,6 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 function App() {
   const [modalAcitve, setModalActive] = useState(false);
   const [nav, setNav] = useState(false);
-  console.log(nav);
   return (
     <div className="app">
       <Modal active={modalAcitve} setActive={setModalActive}/>
@@ -34,7 +33,7 @@ function App() {
         </div>
         </header>
           <div onClick={() => setNav(!nav)} className="burger-menu">
-          {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>}
+          {nav ? <AiOutlineClose size={35}/> : <AiOutlineMenu size={35}/>}
           </div>
         <span className='line'></span>
         <Routes>
