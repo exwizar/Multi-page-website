@@ -2,14 +2,17 @@
 
 @media (max-width: 1080px) {
     .post {
-        .news-wrapper {
+        h1 {
+            font-size: 25px;
+        }
+        .post-block {
             display: flex;
             justify-content: center;
             align-items: center;
-            .wrapper-content {
+            .post-content {
                 width: 100%;
             }
-            .wrapper-img {
+            .post-img {
                 img {
                     width: 100%;
                 }

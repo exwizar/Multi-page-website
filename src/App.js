@@ -2,13 +2,13 @@ import './scss/appStyle.scss';
 import { Link, Route, Routes } from "react-router-dom";
 import Aboutpage from './page/About/Aboutpage.jsx'
 import Contactpage from './page/contact/Contactpage.jsx'
-import Newspage from './page/news/Newspage.jsx'
+import Blogpage from './page/blog/Blogpage.jsx'
 import Mainpage from './page/main/Mainpage.jsx'
 import logo from './scss/img/logo.svg'
 import Subsession from "./components/UI/btnSubSession/Subsession.jsx";
 import { useState } from 'react';
 import Modal from './components/MudalBlock/Modal';
-import Post from './page/news/posts/Post';
+import Post from './page/blog/posts/Post';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
         <span className='line'></span>
         <Routes>
           <Route path="/" element={<Mainpage setModalActive={setModalActive} />} />
-          <Route path="/news/*" element={<Newspage />} />
+          <Route path="/news/*" element={<Blogpage />} />
           <Route path="/news/:id" element={<Post />} />
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/contact" element={<Contactpage setModalActive={setModalActive} />} />

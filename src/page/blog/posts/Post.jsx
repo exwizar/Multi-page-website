@@ -19,13 +19,13 @@ const Post = () => {
     <div className='post'>
     <Heading>{post.title}</Heading>
       {post && (
-        <div className="news-wrapper" key={post.id}>
-          <div className="wrapper-content">
+        <div className="post-block" key={post.id}>
+          <div className="post-content">
             <div className="data-block">13.02.2022</div>
-            <h3 className='wrapper-content__title'>{post.title}</h3>
-            <p className='wrapper-content__body'>{post.body}</p>
+            <h3 className='post-content__title'>{post.title}</h3>
+            <p className='post-content__body'>{post.body}</p>
           </div>
-          <div className="wrapper-img">
+          <div className="post-img">
             <img src={postImg} alt="post-img" />
           </div>
         </div>

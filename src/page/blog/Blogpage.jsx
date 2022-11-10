@@ -1,5 +1,5 @@
 import React from 'react'
-import "./newsStyle.scss"
+import "./blogStyle.scss"
 import './blogMedia.scss'
 import Rectangle from '../../components/UI/heading/Heading.jsx'
 import { useState } from 'react'
@@ -7,7 +7,7 @@ import { Link} from 'react-router-dom'
 import { useEffect } from 'react'
 import postImg from '../../scss/img/news-img/newsImg.png'
 
-const Newspage = () => {
+const Blogpage = () => {
   const [posts, setPosts] = useState([])
   const [currentPost, setCurrentPost] = useState(1)
   const [fetching, setFetching] = useState(true)
@@ -39,11 +39,11 @@ const Newspage = () => {
   }
 
   return (
-    <div className='news'>
+    <div className='blog'>
       <Rectangle>Блог</Rectangle>
         {
           posts.map(post => (
-             <div className="news-wrapper" key={post.id}>
+             <div className="blog-wrapper" key={post.id}>
                 <div className="wrapper-img">
                   <img src={postImg} alt="post-img" />
                 </div>
@@ -65,4 +65,4 @@ const Newspage = () => {
   )
 }
 
-export default Newspage
+export default Blogpage
