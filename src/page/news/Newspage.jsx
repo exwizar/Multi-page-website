@@ -1,5 +1,6 @@
 import React from 'react'
 import "./newsStyle.scss"
+import './blogMedia.scss'
 import Rectangle from '../../components/UI/heading/Heading.jsx'
 import { useState } from 'react'
 import { Link} from 'react-router-dom'
@@ -41,7 +42,6 @@ const Newspage = () => {
   return (
     <div className='news'>
       <Rectangle>Блог</Rectangle>
-      <div>
         {
           posts.map(post => (
              <div className="news-wrapper" key={post.id}>
@@ -62,9 +62,6 @@ const Newspage = () => {
              </div>
           ))
         }
-
-
-      </div>
     </div>
   )
 }

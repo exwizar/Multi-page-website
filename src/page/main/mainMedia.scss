@@ -39,6 +39,11 @@
         }
         .main-img {
             background: none;
+            .main-img__title {
+                &:before, &::after {
+                    display: none;
+                }
+            }
         }
         .main-session {
             .main-session__imgs {
@@ -72,6 +77,51 @@
 
             }
         }
+        
+    }
+}
+
+@media (max-width: 650px) {
+    .main {
+        .reviews .slider .card-text {
+            font-size: 12px;
+            padding: 0 20px;
+            line-height: 110%;
+        }
+
+        .about {
+            .about-block {
+                .about-block__img {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .about-massage {
+                    .about-massage__text {
+                        width: 100%
+                    } 
+                }
+            }
+        }
+        .price .price-block {
+            .price-list__img {
+              img {
+
+                  width: 100%;
+              }
+            
+        }
+            .price-list{
+    
+                .price-list__info{
+                    gap: 0;
+                    &:before {
+                        display: none;
+                    }
+                }
+    
+            } 
+        } 
     }
 }
 

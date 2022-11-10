@@ -1,0 +1,15 @@
+@import '/src/scss/index.scss';
+
+@media (max-width: 992px) {
+    .news {
+        .news-wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+            .wrapper-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

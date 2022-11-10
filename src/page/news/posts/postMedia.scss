@@ -1,0 +1,19 @@
+@import '/src/scss/index.scss';
+
+@media (max-width: 1080px) {
+    .post {
+        .news-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .wrapper-content {
+                width: 100%;
+            }
+            .wrapper-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
