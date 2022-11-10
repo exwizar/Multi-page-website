@@ -14,7 +14,6 @@ const Newspage = () => {
 
   useEffect(() => {
     if (fetching) {
-      console.log('fetching')
       fetch (`http://jsonplaceholder.typicode.com/posts?_limit=2&_page=${currentPost}`)
        .then((res) => res.json())
        .then((result) => {
