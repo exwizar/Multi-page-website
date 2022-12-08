@@ -38,7 +38,9 @@
             display: none;
         }
         .main-img {
-            background: none;
+            margin-top: 100px;
+            background-size: auto;
+            border-radius: 3px;
             .main-img__title {
                 &:before, &::after {
                     display: none;
