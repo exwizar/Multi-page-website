@@ -23,10 +23,10 @@ function App() {
           <img src={logo} alt="logo" />
         </div>
         <div className="menu-links">
-          <Link className = 'link' to="/">Главная</Link>
-          <Link className = 'link' to="/news">Блог</Link>
-          <Link className = 'link' to="/about">О нас</Link>
-          <Link className = 'link' to="/contact">Контакты</Link>
+          <Link onClick={() => setNav(false)} className = 'link' to="/">Главная</Link>
+          <Link onClick={() => setNav(false)} className = 'link' to="/news">Блог</Link>
+          <Link onClick={() => setNav(false)} className = 'link' to="/about">О нас</Link>
+          <Link onClick={() => setNav(false)} className = 'link' to="/contact">Контакты</Link>
         </div>
         <div>
           <Subsession setModalActive={setModalActive}/>
