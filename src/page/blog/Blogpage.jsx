@@ -25,17 +25,15 @@ const Blogpage = () => {
   },[fetching])
 
   useEffect(() => {
-    document.addEventListener('scroll', scrollHandler)
+    document.addEventListener('click', scrollHandler)
 
     return function() {
-      document.removeEventListener('scroll', scrollHandler)
+      document.removeEventListener('click', scrollHandler)
     }
   }, [])
 
   const scrollHandler = (e) => {
-    if(e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100){
       setFetching(true)
-    }
   }
 
   return (
@@ -61,6 +59,7 @@ const Blogpage = () => {
              </div>
           ))
         }
+        <button className='posts-loading' onClick={scrollHandler}>Загрузить ещё</button>
     </div>
   )
 }
