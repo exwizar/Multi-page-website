@@ -20,7 +20,7 @@ function App() {
       <div className="wrapper">
         <header className={nav ? 'menu active' : 'menu'}>
         <div className="menu-logo">
-          <img src={logo} alt="logo" />
+          <Link onClick={() => setNav(false)} className = 'link' to="/">< img src={logo} alt="logo" /></Link>
         </div>
         <div className="menu-links">
           <Link onClick={() => setNav(false)} className = 'link' to="/">Главная</Link>
